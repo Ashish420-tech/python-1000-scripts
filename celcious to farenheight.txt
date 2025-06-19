@@ -1,0 +1,4 @@
+c = float(input(print ("Please enter temprature in celcious:")))
+f= float((c*9/5)+32)
+print ("The temprature in farenheit is: ", f)
+# This code converts temperature from Celsius to Fahrenheit

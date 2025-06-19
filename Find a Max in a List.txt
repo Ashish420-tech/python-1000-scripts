@@ -1,0 +1,5 @@
+num = ["34", "56", "78", "90", "12"]
+
+print("The list is max is : ", max(num))
+print("The list is min is : ", min(num))
+print("The list is sum is : ", sum(map(int, num)))

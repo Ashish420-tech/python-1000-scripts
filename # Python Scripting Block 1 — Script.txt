@@ -1,0 +1,69 @@
+# Python Scripting: Block 1 — Scripts 1 to 50 with Explanations
+
+# Script 41: Square Pattern of *
+n = 5
+for i in range(n):
+    print("* " * n)  # Prints n stars in each of n rows
+
+# Script 42: Right-Angled Triangle Pattern
+n = 5
+for i in range(1, n+1):
+    print("* " * i)  # Each row increases number of stars
+
+# Script 43: Inverted Right-Angled Triangle
+n = 5
+for i in range(n, 0, -1):
+    print("* " * i)  # Each row decreases number of stars
+
+# Script 44: Numbers in Triangle
+n = 5
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end=" ")  # Prints increasing numbers per row
+    print()
+
+# Script 45: Pyramid Pattern of *
+n = 5
+for i in range(n):
+    print(" " * (n-i-1) + "* " * (i+1))  # Left-aligned pyramid
+
+# Script 46: Reverse Pyramid Pattern
+n = 5
+for i in range(n, 0, -1):
+    print(" " * (n-i) + "* " * i)  # Right-aligned inverted pyramid
+
+# Script 47: Floyd's Triangle
+n = 5
+num = 1
+for i in range(1, n+1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1  # Increasing sequence of numbers row-wise
+    print()
+
+# Script 48: Alphabet Pattern
+n = 5
+for i in range(n):
+    for j in range(i+1):
+        print(chr(65 + j), end=" ")  # A=65, printing increasing chars
+    print()
+
+# Script 49: Diamond Pattern
+n = 5
+for i in range(n):
+    print(" " * (n-i-1) + "* " * (i+1))  # Upper pyramid
+for i in range(n-2, -1, -1):
+    print(" " * (n-i-1) + "* " * (i+1))  # Lower inverted pyramid
+
+# Script 50: Pascal's Triangle
+def pascal(n):
+    for i in range(n):
+        val = 1
+        print(' ' * (n - i), end='')  # Leading spaces for formatting
+        for j in range(i + 1):
+            print(val, end=' ')
+            val = val * (i - j) // (j + 1)  # Binomial coefficient
+        print()
+pascal(5)
+
+# All scripts include inline explanations for each loop and logic step.

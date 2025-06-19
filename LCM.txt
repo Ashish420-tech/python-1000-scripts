@@ -1,0 +1,9 @@
+# find the LCM of the two number
+import math
+print("Enter two numbers to find the LCM:")
+num1 = int(input("Enter first number: "))       
+num2 = int(input("Enter second number: "))
+# Calculate LCM using GCD   
+lcm = (num1 * num2) // math.gcd(num1, num2)
+print(f"The LCM of {num1} and {num2} is: {lcm}")        
+# This code calculates the LCM of two numbers using the formula: LCM(a, b) = (a * b) / GCD(a, b)
